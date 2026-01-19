@@ -1,0 +1,21 @@
+# Interview Prep Simulator
+
+.env
+.venv
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+node_modules/
+.next/
+out/
+build/
+dist/
+*.log
+.DS_Store
+.vercel
+.env.local
+.env*.local
+*.tsbuildinfo
