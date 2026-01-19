@@ -57,13 +57,15 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# CORS configuration - Explicit origins for cross-browser support
+# CORS configuration - Explicit origins required with credentials
+# Wildcard (*) origins CANNOT be used with allow_credentials=True
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://frontend-sooty-theta-11.vercel.app",  # Production Vercel URL
         "http://localhost:3000"                         # Local development
     ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
