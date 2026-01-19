@@ -64,7 +64,6 @@ app.add_middleware(
         "https://frontend-sooty-theta-11.vercel.app",  # Production Vercel URL
         "http://localhost:3000"                         # Local development
     ],
-    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
